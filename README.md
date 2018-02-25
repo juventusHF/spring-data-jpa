@@ -76,9 +76,10 @@ In `src/main/resources/application.properties`, passe folgende Zeile an:
 
     spring.jpa.hibernate.ddl-auto=create
     
-Starte die Applikation neu und beende sie dann wieder. 
+Starte die Applikation neu und beende sie dann wieder (sodass die Tabellen zwar angelegt,
+aber nicht wieder gelöscht werden). 
 
-Nun ändere die Zeile erneut:
+Nun ändere die Zeile erneut (damiy nun auch bei Applikationsstart keine Tabellen mehr angelegt werden):
 
     spring.jpa.hibernate.ddl-auto=none
     
