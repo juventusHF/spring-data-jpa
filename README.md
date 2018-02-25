@@ -59,7 +59,7 @@ Starte die Applikation erneut:
 Durch `spring.jpa.hibernate.ddl-auto=create-drop` wird die Applikation die nötigen Tabellen in MySQL
 anlegen und wie zuvor mit initialen Daten füllen.
 
-Verbinde Dich (während die Applikation) läuft mit MySQL und schau den Inhalt der Tabellen an:
+Verbinde Dich (während die Applikation läuft) mit MySQL und schau den Inhalt der Tabellen an:
 
     $ mysql -u jpauser -p
     Enter password: 
@@ -79,7 +79,7 @@ In `src/main/resources/application.properties`, passe folgende Zeile an:
 Starte die Applikation neu und beende sie dann wieder (sodass die Tabellen zwar angelegt,
 aber nicht wieder gelöscht werden). 
 
-Nun ändere die Zeile erneut (damiy nun auch bei Applikationsstart keine Tabellen mehr angelegt werden):
+Nun ändere die Zeile erneut (damit nun auch bei Applikationsstart keine Tabellen mehr angelegt werden):
 
     spring.jpa.hibernate.ddl-auto=none
     
