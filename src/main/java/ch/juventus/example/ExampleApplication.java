@@ -21,15 +21,12 @@ public class ExampleApplication {
     class initRepositoryCLR implements CommandLineRunner {
 
         private final DepartmentRepository departmentRepository;
-        private final AccountRepository accountRepository;
         private final RoleRepository roleRepository;
 
         @Autowired
         public initRepositoryCLR(DepartmentRepository departmentRepository,
-                                 AccountRepository accountRepository,
                                  RoleRepository roleRepository) {
             this.departmentRepository = departmentRepository;
-            this.accountRepository = accountRepository;
             this.roleRepository = roleRepository;
         }
 
@@ -41,16 +38,6 @@ public class ExampleApplication {
             accounting.addEmployee(new Employee("Wilson", "Wilson"));
             accounting.addEmployee(new Employee("Bob", "Vila"));
             departmentRepository.save(accounting);
-
-            Role userRole = new Role("user");
-            Account bob = new Account("bob", "secret");
-            bob.addRole(userRole);
-
-            Role adminRole = new Role("admin");
-            Account joe = new Account("joe", "secret");
-            joe.addRole(userRole);
-            joe.addRole(adminRole);
-            accountRepository.save(Lists.newArrayList(joe, bob));
         }
     }
 

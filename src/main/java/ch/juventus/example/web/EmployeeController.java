@@ -4,7 +4,6 @@ import ch.juventus.example.data.Employee;
 import ch.juventus.example.data.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -38,7 +37,6 @@ public class EmployeeController {
     }
 
     @PostMapping("/employees")
-    @Secured("ROLE_ADMIN")
     public ResponseEntity<?> create(@RequestBody Employee requestEmployee) {
 
         Employee persistedEmployee = employeeRepository.save(requestEmployee);
