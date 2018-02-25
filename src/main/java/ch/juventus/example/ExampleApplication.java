@@ -17,17 +17,14 @@ public class ExampleApplication {
 		SpringApplication.run(ExampleApplication.class, args);
 	}
 
-    @Component
+    /*@Component
     class initRepositoryCLR implements CommandLineRunner {
 
         private final DepartmentRepository departmentRepository;
-        private final RoleRepository roleRepository;
 
         @Autowired
-        public initRepositoryCLR(DepartmentRepository departmentRepository,
-                                 RoleRepository roleRepository) {
+        public initRepositoryCLR(DepartmentRepository departmentRepository) {
             this.departmentRepository = departmentRepository;
-            this.roleRepository = roleRepository;
         }
 
         @Override
@@ -39,7 +36,7 @@ public class ExampleApplication {
             accounting.addEmployee(new Employee("Bob", "Vila"));
             departmentRepository.save(accounting);
         }
-    }
+    }*/
 
 
 }
