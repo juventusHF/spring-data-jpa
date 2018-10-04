@@ -8,8 +8,6 @@ Du kannst nun die Applikation unter folgenden URLs aufrufen:
 - http://localhost:8080/employees
 - http://localhost:8080/departments
 
-Das Resultat der Aufrufe, ist dass die Ressource für unberechtigten Zugriff gesperrt sind.
-
 ## Aufgaben
 
 ### JPA und Hibernate
