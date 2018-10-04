@@ -36,6 +36,7 @@ Aus dem Namen der Datenbank und Standard-Port 3306 ergibt sich folgende URL: `jd
 Nun lässt sich MySQL für Spring Data konfigurieren. 
 Füge dazu folgende Zeilen in `src/main/resources/application.properties` hinzu:
 
+    spring.jpa.database-platform=org.hibernate.dialect.MySQL5Dialect
     spring.jpa.hibernate.ddl-auto=create-drop
     spring.datasource.url=jdbc:mysql://localhost:3306/jpademo
     spring.datasource.username=jpauser
