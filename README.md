@@ -82,7 +82,7 @@ Nun ändere die Zeile erneut (damit nun auch bei Applikationsstart keine Tabelle
 
     spring.jpa.hibernate.ddl-auto=none
     
-In der Klasse `ExampleApplication`, kommentiere die gesamte innere Klasse `initRepositoryCLR` aus, sodass
+In der Klasse `ExampleApplication`, kommentiere die gesamte innere Klasse `InitRepositoryCLR` aus, sodass
 bei Applikationsstart keine neuen Daten mehr eingefügt werden.
 
 Beim nächsten Start der Applikation werden nun keine Tabellen mehr frisch angelegt und bei Applikationsende

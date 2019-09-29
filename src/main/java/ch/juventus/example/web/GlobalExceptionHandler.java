@@ -1,4 +1,4 @@
-package ch.juventus.example;
+package ch.juventus.example.web;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

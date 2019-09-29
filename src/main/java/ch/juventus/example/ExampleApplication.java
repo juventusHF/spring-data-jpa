@@ -1,16 +1,15 @@
 package ch.juventus.example;
 
-import ch.juventus.example.data.*;
-import com.google.common.collect.Lists;
+import ch.juventus.example.data.Department;
+import ch.juventus.example.data.DepartmentRepository;
+import ch.juventus.example.data.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@EnableSwagger2
 public class ExampleApplication {
 
 	public static void main(String[] args) {
@@ -18,12 +17,12 @@ public class ExampleApplication {
 	}
 
     @Component
-    class initRepositoryCLR implements CommandLineRunner {
+    class InitRepositoryCLR implements CommandLineRunner {
 
         private final DepartmentRepository departmentRepository;
 
         @Autowired
-        public initRepositoryCLR(DepartmentRepository departmentRepository) {
+        public InitRepositoryCLR(DepartmentRepository departmentRepository) {
             this.departmentRepository = departmentRepository;
         }
 
